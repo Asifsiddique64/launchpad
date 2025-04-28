@@ -23,7 +23,7 @@ export default function CustomToast({ message, subMessage, onHide }: CustomToast
         duration: 300,
         useNativeDriver: true,
       }),
-      Animated.delay(2000),
+      Animated.delay(5000),
       Animated.timing(fadeAnim, {
         toValue: 0,
         duration: 300,

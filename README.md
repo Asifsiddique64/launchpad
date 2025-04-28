@@ -1,59 +1,41 @@
-# Welcome to Your Expo App 👋
+# Launchpad - Notice Board Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Prerequisites
+### Home Screen
+<img src="screenshots/home.png" width="200" alt="Home Screen">
 
-To get started, ensure you have the following installed and configured:
+### Notices Screen
+<img src="screenshots/dark.png" width="200" alt="Notices Screen">
 
-* **Expo Go:** Install the Expo Go app on your physical device. Refer to the installation guide at [https://expo.dev/go](https://expo.dev/go).
-* **Node.js (LTS version):** Download and install the latest LTS version from [https://nodejs.org/en](https://nodejs.org/en). We recommend using Node.js version **22.2.0**.
-* **npm:** Node Package Manager is included with Node.js. We have used **npm version 10.8.1**.
-* **Code Editor:** Install your preferred code editor or IDE (e.g., VS Code).
-* **Operating System:** macOS, Linux, or Windows (with PowerShell and WSL2 recommended for a smoother experience). Ensure you have a terminal window open.
-* **EAS Account:** If you don't have an Expo Application Services (EAS) account, create one at [https://expo.dev/signup](https://expo.dev/signup). This is required for building and deploying your app.
-* **EAS CLI:** Install the EAS command-line interface globally using the following command:
 
-    ```bash
-    npm install -g eas-cli
-    ```
-* **Initialize EAS:** Navigate to your project directory in the terminal and run the following command to initialize and link your project to EAS:
+### 1. Notice Listing Screen
+- **Category-Specific View**: Displays notices filtered by selected category
 
-    ```bash
-    eas init
-    ```
+<img src="screenshots/category.png" width="200" alt="categories">
 
-    You can refer to this link for further steps: [https://docs.expo.dev/tutorial/eas/configure-development-build/](https://docs.expo.dev/tutorial/eas/configure-development-build/)
-* **Login to EAS:** Log in to your EAS account in the terminal using the command:
+- **Search Bar**: Dynamically filters notices by keywords
 
-    ```bash
-    eas login
-    ```
+<img src="screenshots/search.png" width="200" alt="search">
 
-    Enter your email or username and password when prompted.
+- **Notice Card Layout**:
+  - Title, subtitle, and truncated description (3 lines max)
+  - Date/time (bottom-right) and attachment indicator (bottom-left)
+  - Unread indicator (pink icon)
 
-## Getting Started
+<img src="screenshots/notice.png" width="200" alt="notice">
 
-Follow these steps to run your Expo app:
+- **Infinite Scroll**: Shows "Fetching more notices…" toast when reaching the end
 
-1.  **Install Dependencies:** Navigate to your project directory in the terminal and install the required npm packages:
+<img src="screenshots/toast.png" width="200" alt="notice">
 
-    ```bash
-    npm install
-    ```
 
-2.  **Start the App:** Start the Expo development server:
 
-    ```bash
-    npx expo start
-    ```
+### 2. Theme Support
+- Light and dark mode toggle
+- Consistent styling across all screens
 
-3.  **Switch to Expo Go:** Once the development server starts, you'll see options in your terminal. Press the **'S' key** to switch to using the Expo Go app. You should see a message like: `Using "Expo Go"`.
+<img src="screenshots/theme.png" width="200" alt="notice">
+<img src="screenshots/notices.png" width="200" alt="notice">
+<img src="screenshots/dark.png" width="200" alt="notice">
 
-    ![Expo Go Switch Image](https://github.com/user-attachments/assets/37ae0b38-c971-4170-bb94-5325f70231a1)
 
-4.  **Open the App on Your Device:** Scan the **QR code** displayed in your terminal or browser using the Expo Go app on your physical device.
-    * **Android:** Open the Expo Go app and select the "Scan QR code" option.
-    * **iOS:** Use the default Camera app to scan the QR code.
-
-Good luck and happy coding!
